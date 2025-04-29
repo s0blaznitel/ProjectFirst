@@ -1,13 +1,10 @@
-$color-green-dark: #425844
-$color-green-light: #61A568
+$color-blue-dark: #040811
+$color-red-dark: #8C000D
 
-$color-blue-dark: #101D2C
+$color-linear: linear-gradient(90deg,rgba(4, 8, 17, 1) 30%, rgba(140, 0, 13, 1) 70%) no-repeat
 
-$color-gray-dark: #AAAAAA
-$color-gray-light: #F5F5F5
-    
+$color-white: #ffffff
 
-    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -15,3 +12,16 @@ $color-gray-light: #F5F5F5
 
 html
     font-size: 62.5%
+
+body
+    font-family: "Montserrat", sans-serif
+    font-weight: 400
+    color: $color-white
+    background: $color-linear
+    font-size: 1.8rem
+
+.container
+    display: grid
+    grid-template-rows: 5rem 96vh 30vw min-content min-content 50vw 50vw
+    grid-template-columns: [center-start] repeat(6, [col-start] minmax(min-content, 21.5rem)[col-end]) [center-end]
+    justify-content: center
